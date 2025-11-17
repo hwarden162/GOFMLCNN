@@ -140,5 +140,5 @@ model.load_state_dict(best_model_wts)
 # SAVE THE BEST MODEL
 # ---------------------------------------
 os.makedirs("saved_models", exist_ok=True)
-torch.save(model.state_dict(), "saved_models/resnet101_best.pth")
-print("Best model saved as resnet101_best.pth")
+torch.save(model.state_dict(), "saved_models/resnet101_best_3ch.pth")
+print("Best model saved as resnet101_best_3ch.pth")
