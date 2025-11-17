@@ -11,12 +11,12 @@ import os
 # ---------------------------------------
 # CONFIG
 # ---------------------------------------
-train_dir = "/Users/hwarden/Documents/PhD/GOFMLPipeline/image_patches/train"
+train_dir = "/exports/igmm/eddie/khamseh-lab/hwarden/GOFMLPipeline/image_patches/train"
 num_classes = 2
 batch_size = 32
 lr = 1e-4
-num_epochs = 30
-patience = 5
+num_epochs = 100
+patience = 10
 val_ratio = 0.2
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
