@@ -7,8 +7,8 @@ import os
 # ---------------------------------------
 # CONFIG
 # ---------------------------------------
-test_dir = "/exports/igmm/eddie/khamseh-lab/hwarden/GOFMLPipeline/image_patches/test"
-model_path = "saved_models/resnet101_best_3ch.pth"
+test_dir = "/exports/igmm/eddie/khamseh-lab/hwarden/GOFMLPipeline/image_patches_unmasked/test"
+model_path = "saved_models/resnet101_best_unmasked.pth"
 batch_size = 32
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 

@@ -11,7 +11,7 @@ import os
 # ---------------------------------------
 # CONFIG
 # ---------------------------------------
-train_dir = "/exports/igmm/eddie/khamseh-lab/hwarden/GOFMLPipeline/image_patches/train"
+train_dir = "/exports/igmm/eddie/khamseh-lab/hwarden/GOFMLPipeline/image_patches_unmasked/train"
 num_classes = 2
 batch_size = 32
 lr = 1e-4
@@ -140,5 +140,6 @@ model.load_state_dict(best_model_wts)
 # SAVE THE BEST MODEL
 # ---------------------------------------
 os.makedirs("saved_models", exist_ok=True)
-torch.save(model.state_dict(), "saved_models/resnet101_best_3ch.pth")
+#torch.save(model.state_dict(), "saved_models/resnet101_best_3ch.pth")
+torch.save(model.state_dict(), "saved_models/resnet101_best_unmasked.pth")
 print("Best model saved as resnet101_best_3ch.pth")
